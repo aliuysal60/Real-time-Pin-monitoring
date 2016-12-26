@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="#FF0C0B0B" Margin="10,0,0,0">
+    <Grid x:Name="MainGrid" Background="#FF0C0B0B" Margin="10,0,0,0">
         <Ellipse x:Name="OGPIO04" Fill="LightGray" HorizontalAlignment="Left" Height="100" Margin="40,211,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
         <Ellipse x:Name="OGPIO05" Fill="LightGray" HorizontalAlignment="Left" Height="100" Margin="145,211,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
         <Ellipse x:Name="OGPIO06" Fill="LightGray" HorizontalAlignment="Left" Height="100" Margin="250,211,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
