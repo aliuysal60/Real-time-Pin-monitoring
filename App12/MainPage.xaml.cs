@@ -3,6 +3,7 @@ using Windows.Devices.Gpio;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Core;
+using Windows.UI.Xaml.Shapes;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -105,7 +106,7 @@ namespace App12
             GPIO04pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO04pin.ValueChanged += GPIO04_ValueChanged;
+            GPIO04pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -123,7 +124,7 @@ namespace App12
             GPIO05pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO05pin.ValueChanged += GPIO05_ValueChanged;
+            GPIO05pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -139,7 +140,7 @@ namespace App12
             GPIO06pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO06pin.ValueChanged += GPIO06_ValueChanged;
+            GPIO06pin.ValueChanged += Pin_ValueChanged;
 
             //       GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -243,7 +244,7 @@ namespace App12
             GPIO12pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO12pin.ValueChanged += GPIO12_ValueChanged;
+            GPIO12pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -261,7 +262,7 @@ namespace App12
             GPIO13pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO13pin.ValueChanged += GPIO13_ValueChanged;
+            GPIO13pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
        
@@ -312,7 +313,7 @@ namespace App12
             GPIO16pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO16pin.ValueChanged += GPIO16_ValueChanged;
+            GPIO16pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -330,7 +331,7 @@ namespace App12
             GPIO17pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO17pin.ValueChanged += GPIO17_ValueChanged;
+            GPIO17pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -347,7 +348,7 @@ namespace App12
             GPIO18pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO18pin.ValueChanged += GPIO18_ValueChanged;
+            GPIO18pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -365,7 +366,7 @@ namespace App12
             GPIO19pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO19pin.ValueChanged += GPIO19_ValueChanged;
+            GPIO19pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -383,7 +384,7 @@ namespace App12
             GPIO20pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO20pin.ValueChanged += GPIO20_ValueChanged;
+            GPIO20pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -401,7 +402,7 @@ namespace App12
             GPIO21pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO21pin.ValueChanged += GPIO21_ValueChanged;
+            GPIO21pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -419,7 +420,7 @@ namespace App12
             GPIO22pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO22pin.ValueChanged += GPIO22_ValueChanged;
+            GPIO22pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -437,7 +438,7 @@ namespace App12
             GPIO23pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO23pin.ValueChanged += GPIO23_ValueChanged;
+            GPIO23pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -455,7 +456,7 @@ namespace App12
             GPIO24pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO24pin.ValueChanged += GPIO24_ValueChanged;
+            GPIO24pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -473,7 +474,7 @@ namespace App12
             GPIO25pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO25pin.ValueChanged += GPIO25_ValueChanged;
+            GPIO25pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -491,7 +492,7 @@ namespace App12
             GPIO26pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO26pin.ValueChanged += GPIO26_ValueChanged;
+            GPIO26pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -509,7 +510,7 @@ namespace App12
             GPIO27pin.DebounceTimeout = TimeSpan.FromMilliseconds(50);
 
             // Register for the ValueChanged event so our buttonPin_ValueChanged 
-            GPIO27pin.ValueChanged += GPIO27_ValueChanged;
+            GPIO27pin.ValueChanged += Pin_ValueChanged;
 
             //  GpioStatus.Text = "GPIO hatasız başlatıldı";
 
@@ -577,167 +578,49 @@ namespace App12
         //   });
         //  }
 
-
-        private void GPIO04_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        private void Pin_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
         {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO04pin.Write(PinValue);
-
-            }
-
             // need to invoke UI updates on the UI thread because this event
             // handler gets invoked on a separate thread.
             var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
+                var PinName = GetPinName(sender.PinNumber);
+                var PinTextName = GetPinTextName(sender.PinNumber);
+                var PinIcon = MainGrid.FindName(PinName) as Ellipse;
+                var PinText = MainGrid.FindName(PinTextName) as TextBlock;
 
+                var test = Gpio04Status;
+
+                if (e.Edge == GpioPinEdge.FallingEdge)
                 {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO04.Fill = redBrush;
-                    Gpio04Status.Text = "Çekiliyor";
+                    PinIcon.Fill = redBrush;
+                    PinText.Text = "Çekiliyor";
                 }
                 else
                 {
-                    OGPIO04.Fill = grayBrush;
-                    Gpio04Status.Text = "Boşta";
+                    PinIcon.Fill = grayBrush;
+                    PinText.Text = "Boşta";
                 }
             });
         }
 
-
-        private void GPIO05_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        private string GetPinName(int pinNumber)
         {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO05pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO05.Fill = redBrush;
-                    Gpio05Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO05.Fill = grayBrush;
-                    Gpio05Status.Text = "Boşta";
-                }
-            });
+            return $"OGPIO{pinNumber:D2}";
         }
 
-
-
-        private void GPIO06_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        private string GetPinTextName(int pinNumber)
         {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO06pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO06.Fill = redBrush;
-                    Gpio06Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO06.Fill = grayBrush;
-                    Gpio06Status.Text = "Boşta";
-                }
-            });
+            return $"Gpio{pinNumber:D2}Status";
         }
 
-
-        //   private void GPIO07_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        //    {
-        // toggle the state of the LED every time the button is pressed
-        //        if (e.Edge == GpioPinEdge.FallingEdge)
-        //      {
-        //PinValue = (PinValue == GpioPinValue.Low) ?
-        //GpioPinValue.High : GpioPinValue.Low;
-        //GPIO07pin.Write(PinValue);
-
-        //}
-
-        // need to invoke UI updates on the UI thread because this event
-        // handler gets invoked on a separate thread.
-        //        var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-        //              if (e.Edge == GpioPinEdge.FallingEdge)
-
-        //            {
-        //PinValue = GpioPinValue.Low;
-        //  OGPIO07.Fill = redBrush;
-        //    Gpio07Status.Text = "Çekiliyor";
-        //  }
-        //           else
-        //          {
-        //  OGPIO07.Fill = grayBrush;
-        //  Gpio07Status.Text = "Boşta";
-        // }
-        //   });
-        //  }
-
-
-
-        //    private void GPIO08_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        //     {
-        // toggle the state of the LED every time the button is pressed
-        //         if (e.Edge == GpioPinEdge.FallingEdge)
-        //         {
-        //     PinValue = (PinValue == GpioPinValue.Low) ?
-        //  GpioPinValue.High : GpioPinValue.Low;
-        //  GPIO08pin.Write(PinValue);
-
-        // }
-
-        // need to invoke UI updates on the UI thread because this event
-        // handler gets invoked on a separate thread.
-        //  var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-        //          if (e.Edge == GpioPinEdge.FallingEdge)
-
-        //         {
-        // PinValue = GpioPinValue.Low;
-        // OGPIO08.Fill = redBrush;
-        //  Gpio08Status.Text = "Çekiliyor";
-        //}
-        //      else
-        //      {
-        // OGPIO08.Fill = grayBrush;
-        //  Gpio08Status.Text = "Boşta";
-        // }
-        // });
-        // }
-
-
-        //private void GPIO09_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //private void GPIO04_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
         //{
         //    // toggle the state of the LED every time the button is pressed
         //    if (e.Edge == GpioPinEdge.FallingEdge)
         //    {
         //        PinValue = (PinValue == GpioPinValue.Low) ?
         //            GpioPinValue.High : GpioPinValue.Low;
-        //        GPIO09pin.Write(PinValue);
+        //        GPIO04pin.Write(PinValue);
 
         //    }
 
@@ -748,27 +631,26 @@ namespace App12
 
         //        {
         //            PinValue = GpioPinValue.Low;
-        //            OGPIO09.Fill = redBrush;
-        //            Gpio09Status.Text = "Çekiliyor";
+        //            OGPIO04.Fill = redBrush;
+        //            Gpio04Status.Text = "Çekiliyor";
         //        }
         //        else
         //        {
-        //            OGPIO09.Fill = grayBrush;
-        //            Gpio09Status.Text = "Boşta";
+        //            OGPIO04.Fill = grayBrush;
+        //            Gpio04Status.Text = "Boşta";
         //        }
         //    });
         //}
 
 
-
-        //private void GPIO10_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //private void GPIO05_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
         //{
         //    // toggle the state of the LED every time the button is pressed
         //    if (e.Edge == GpioPinEdge.FallingEdge)
         //    {
         //        PinValue = (PinValue == GpioPinValue.Low) ?
         //            GpioPinValue.High : GpioPinValue.Low;
-        //        GPIO10pin.Write(PinValue);
+        //        GPIO05pin.Write(PinValue);
 
         //    }
 
@@ -779,27 +661,27 @@ namespace App12
 
         //        {
         //            PinValue = GpioPinValue.Low;
-        //            OGPIO10.Fill = redBrush;
-        //            Gpio10Status.Text = "Çekiliyor";
+        //            OGPIO05.Fill = redBrush;
+        //            Gpio05Status.Text = "Çekiliyor";
         //        }
         //        else
         //        {
-        //            OGPIO10.Fill = grayBrush;
-        //            Gpio10Status.Text = "Boşta";
+        //            OGPIO05.Fill = grayBrush;
+        //            Gpio05Status.Text = "Boşta";
         //        }
         //    });
         //}
 
 
 
-        //private void GPIO11_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //private void GPIO06_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
         //{
         //    // toggle the state of the LED every time the button is pressed
         //    if (e.Edge == GpioPinEdge.FallingEdge)
         //    {
         //        PinValue = (PinValue == GpioPinValue.Low) ?
         //            GpioPinValue.High : GpioPinValue.Low;
-        //        GPIO11pin.Write(PinValue);
+        //        GPIO06pin.Write(PinValue);
 
         //    }
 
@@ -810,87 +692,180 @@ namespace App12
 
         //        {
         //            PinValue = GpioPinValue.Low;
-        //            OGPIO11.Fill = redBrush;
-        //            Gpio11Status.Text = "Çekiliyor";
+        //            OGPIO06.Fill = redBrush;
+        //            Gpio06Status.Text = "Çekiliyor";
         //        }
         //        else
         //        {
-        //            OGPIO11.Fill = grayBrush;
-        //            Gpio11Status.Text = "Boşta";
+        //            OGPIO06.Fill = grayBrush;
+        //            Gpio06Status.Text = "Boşta";
         //        }
         //    });
         //}
 
 
+        ////   private void GPIO07_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        ////    {
+        //// toggle the state of the LED every time the button is pressed
+        ////        if (e.Edge == GpioPinEdge.FallingEdge)
+        ////      {
+        ////PinValue = (PinValue == GpioPinValue.Low) ?
+        ////GpioPinValue.High : GpioPinValue.Low;
+        ////GPIO07pin.Write(PinValue);
 
-        private void GPIO12_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO12pin.Write(PinValue);
+        ////}
 
-            }
+        //// need to invoke UI updates on the UI thread because this event
+        //// handler gets invoked on a separate thread.
+        ////        var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        ////              if (e.Edge == GpioPinEdge.FallingEdge)
 
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO12.Fill = redBrush;
-                    Gpio12Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO12.Fill = grayBrush;
-                    Gpio12Status.Text = "Boşta";
-                }
-            });
-        }
-
-
-        private void GPIO13_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO13pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO13.Fill = redBrush;
-                    Gpio13Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO13.Fill = grayBrush;
-                    Gpio13Status.Text = "Boşta";
-                }
-            });
-        }
+        ////            {
+        ////PinValue = GpioPinValue.Low;
+        ////  OGPIO07.Fill = redBrush;
+        ////    Gpio07Status.Text = "Çekiliyor";
+        ////  }
+        ////           else
+        ////          {
+        ////  OGPIO07.Fill = grayBrush;
+        ////  Gpio07Status.Text = "Boşta";
+        //// }
+        ////   });
+        ////  }
 
 
-        //private void GPIO14_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+
+        ////    private void GPIO08_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        ////     {
+        //// toggle the state of the LED every time the button is pressed
+        ////         if (e.Edge == GpioPinEdge.FallingEdge)
+        ////         {
+        ////     PinValue = (PinValue == GpioPinValue.Low) ?
+        ////  GpioPinValue.High : GpioPinValue.Low;
+        ////  GPIO08pin.Write(PinValue);
+
+        //// }
+
+        //// need to invoke UI updates on the UI thread because this event
+        //// handler gets invoked on a separate thread.
+        ////  var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        ////          if (e.Edge == GpioPinEdge.FallingEdge)
+
+        ////         {
+        //// PinValue = GpioPinValue.Low;
+        //// OGPIO08.Fill = redBrush;
+        ////  Gpio08Status.Text = "Çekiliyor";
+        ////}
+        ////      else
+        ////      {
+        //// OGPIO08.Fill = grayBrush;
+        ////  Gpio08Status.Text = "Boşta";
+        //// }
+        //// });
+        //// }
+
+
+        ////private void GPIO09_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        ////{
+        ////    // toggle the state of the LED every time the button is pressed
+        ////    if (e.Edge == GpioPinEdge.FallingEdge)
+        ////    {
+        ////        PinValue = (PinValue == GpioPinValue.Low) ?
+        ////            GpioPinValue.High : GpioPinValue.Low;
+        ////        GPIO09pin.Write(PinValue);
+
+        ////    }
+
+        ////    // need to invoke UI updates on the UI thread because this event
+        ////    // handler gets invoked on a separate thread.
+        ////    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        ////        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        ////        {
+        ////            PinValue = GpioPinValue.Low;
+        ////            OGPIO09.Fill = redBrush;
+        ////            Gpio09Status.Text = "Çekiliyor";
+        ////        }
+        ////        else
+        ////        {
+        ////            OGPIO09.Fill = grayBrush;
+        ////            Gpio09Status.Text = "Boşta";
+        ////        }
+        ////    });
+        ////}
+
+
+
+        ////private void GPIO10_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        ////{
+        ////    // toggle the state of the LED every time the button is pressed
+        ////    if (e.Edge == GpioPinEdge.FallingEdge)
+        ////    {
+        ////        PinValue = (PinValue == GpioPinValue.Low) ?
+        ////            GpioPinValue.High : GpioPinValue.Low;
+        ////        GPIO10pin.Write(PinValue);
+
+        ////    }
+
+        ////    // need to invoke UI updates on the UI thread because this event
+        ////    // handler gets invoked on a separate thread.
+        ////    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        ////        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        ////        {
+        ////            PinValue = GpioPinValue.Low;
+        ////            OGPIO10.Fill = redBrush;
+        ////            Gpio10Status.Text = "Çekiliyor";
+        ////        }
+        ////        else
+        ////        {
+        ////            OGPIO10.Fill = grayBrush;
+        ////            Gpio10Status.Text = "Boşta";
+        ////        }
+        ////    });
+        ////}
+
+
+
+        ////private void GPIO11_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        ////{
+        ////    // toggle the state of the LED every time the button is pressed
+        ////    if (e.Edge == GpioPinEdge.FallingEdge)
+        ////    {
+        ////        PinValue = (PinValue == GpioPinValue.Low) ?
+        ////            GpioPinValue.High : GpioPinValue.Low;
+        ////        GPIO11pin.Write(PinValue);
+
+        ////    }
+
+        ////    // need to invoke UI updates on the UI thread because this event
+        ////    // handler gets invoked on a separate thread.
+        ////    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        ////        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        ////        {
+        ////            PinValue = GpioPinValue.Low;
+        ////            OGPIO11.Fill = redBrush;
+        ////            Gpio11Status.Text = "Çekiliyor";
+        ////        }
+        ////        else
+        ////        {
+        ////            OGPIO11.Fill = grayBrush;
+        ////            Gpio11Status.Text = "Boşta";
+        ////        }
+        ////    });
+        ////}
+
+
+
+        //private void GPIO12_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
         //{
         //    // toggle the state of the LED every time the button is pressed
         //    if (e.Edge == GpioPinEdge.FallingEdge)
         //    {
         //        PinValue = (PinValue == GpioPinValue.Low) ?
         //            GpioPinValue.High : GpioPinValue.Low;
-        //        GPIO14pin.Write(PinValue);
+        //        GPIO12pin.Write(PinValue);
 
         //    }
 
@@ -901,27 +876,26 @@ namespace App12
 
         //        {
         //            PinValue = GpioPinValue.Low;
-        //            OGPIO14.Fill = redBrush;
-        //            Gpio14Status.Text = "Çekiliyor";
+        //            OGPIO12.Fill = redBrush;
+        //            Gpio12Status.Text = "Çekiliyor";
         //        }
         //        else
         //        {
-        //            OGPIO14.Fill = grayBrush;
-        //            Gpio14Status.Text = "Boşta";
+        //            OGPIO12.Fill = grayBrush;
+        //            Gpio12Status.Text = "Boşta";
         //        }
         //    });
         //}
 
 
-
-        //private void GPIO15_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //private void GPIO13_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
         //{
         //    // toggle the state of the LED every time the button is pressed
         //    if (e.Edge == GpioPinEdge.FallingEdge)
         //    {
         //        PinValue = (PinValue == GpioPinValue.Low) ?
         //            GpioPinValue.High : GpioPinValue.Low;
-        //        GPIO15pin.Write(PinValue);
+        //        GPIO13pin.Write(PinValue);
 
         //    }
 
@@ -932,381 +906,442 @@ namespace App12
 
         //        {
         //            PinValue = GpioPinValue.Low;
-        //            OGPIO15.Fill = redBrush;
-        //            Gpio15Status.Text = "Çekiliyor";
+        //            OGPIO13.Fill = redBrush;
+        //            Gpio13Status.Text = "Çekiliyor";
         //        }
         //        else
         //        {
-        //            OGPIO15.Fill = grayBrush;
-        //            Gpio15Status.Text = "Boşta";
+        //            OGPIO13.Fill = grayBrush;
+        //            Gpio13Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
+
+
+        ////private void GPIO14_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        ////{
+        ////    // toggle the state of the LED every time the button is pressed
+        ////    if (e.Edge == GpioPinEdge.FallingEdge)
+        ////    {
+        ////        PinValue = (PinValue == GpioPinValue.Low) ?
+        ////            GpioPinValue.High : GpioPinValue.Low;
+        ////        GPIO14pin.Write(PinValue);
+
+        ////    }
+
+        ////    // need to invoke UI updates on the UI thread because this event
+        ////    // handler gets invoked on a separate thread.
+        ////    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        ////        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        ////        {
+        ////            PinValue = GpioPinValue.Low;
+        ////            OGPIO14.Fill = redBrush;
+        ////            Gpio14Status.Text = "Çekiliyor";
+        ////        }
+        ////        else
+        ////        {
+        ////            OGPIO14.Fill = grayBrush;
+        ////            Gpio14Status.Text = "Boşta";
+        ////        }
+        ////    });
+        ////}
+
+
+
+        ////private void GPIO15_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        ////{
+        ////    // toggle the state of the LED every time the button is pressed
+        ////    if (e.Edge == GpioPinEdge.FallingEdge)
+        ////    {
+        ////        PinValue = (PinValue == GpioPinValue.Low) ?
+        ////            GpioPinValue.High : GpioPinValue.Low;
+        ////        GPIO15pin.Write(PinValue);
+
+        ////    }
+
+        ////    // need to invoke UI updates on the UI thread because this event
+        ////    // handler gets invoked on a separate thread.
+        ////    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        ////        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        ////        {
+        ////            PinValue = GpioPinValue.Low;
+        ////            OGPIO15.Fill = redBrush;
+        ////            Gpio15Status.Text = "Çekiliyor";
+        ////        }
+        ////        else
+        ////        {
+        ////            OGPIO15.Fill = grayBrush;
+        ////            Gpio15Status.Text = "Boşta";
+        ////        }
+        ////    });
+        ////}
+
+
+
+        //private void GPIO16_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO16pin.Write(PinValue);
+
+        //    }
+
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO16.Fill = redBrush;
+        //            Gpio16Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO16.Fill = grayBrush;
+        //            Gpio16Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
+
+
+        //private void GPIO17_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO17pin.Write(PinValue);
+
+        //    }
+
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO17.Fill = redBrush;
+        //            Gpio17Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO17.Fill = grayBrush;
+        //            Gpio17Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
+
+
+        //private void GPIO18_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO18pin.Write(PinValue);
+
+        //    }
+
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO18.Fill = redBrush;
+        //            Gpio18Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO18.Fill = grayBrush;
+        //            Gpio18Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
+
+
+        //private void GPIO19_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO19pin.Write(PinValue);
+
+        //    }
+
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO19.Fill = redBrush;
+        //            Gpio19Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO19.Fill = grayBrush;
+        //            Gpio19Status.Text = "Boşta";
         //        }
         //    });
         //}
 
 
 
-        private void GPIO16_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO16pin.Write(PinValue);
+        //private void GPIO20_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO20pin.Write(PinValue);
 
-            }
+        //    }
 
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
 
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO16.Fill = redBrush;
-                    Gpio16Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO16.Fill = grayBrush;
-                    Gpio16Status.Text = "Boşta";
-                }
-            });
-        }
-
-
-        private void GPIO17_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO17pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO17.Fill = redBrush;
-                    Gpio17Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO17.Fill = grayBrush;
-                    Gpio17Status.Text = "Boşta";
-                }
-            });
-        }
-
-
-        private void GPIO18_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO18pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO18.Fill = redBrush;
-                    Gpio18Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO18.Fill = grayBrush;
-                    Gpio18Status.Text = "Boşta";
-                }
-            });
-        }
-
-
-        private void GPIO19_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO19pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO19.Fill = redBrush;
-                    Gpio19Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO19.Fill = grayBrush;
-                    Gpio19Status.Text = "Boşta";
-                }
-            });
-        }
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO20.Fill = redBrush;
+        //            Gpio20Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO20.Fill = grayBrush;
+        //            Gpio20Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
 
 
 
-        private void GPIO20_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO20pin.Write(PinValue);
+        //private void GPIO21_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO21pin.Write(PinValue);
 
-            }
+        //    }
 
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
 
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO20.Fill = redBrush;
-                    Gpio20Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO20.Fill = grayBrush;
-                    Gpio20Status.Text = "Boşta";
-                }
-            });
-        }
-
-
-
-        private void GPIO21_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO21pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO21.Fill = redBrush;
-                    Gpio21Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO21.Fill = grayBrush;
-                    Gpio21Status.Text = "Boşta";
-                }
-            });
-        }
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO21.Fill = redBrush;
+        //            Gpio21Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO21.Fill = grayBrush;
+        //            Gpio21Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
 
 
 
-        private void GPIO22_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO22pin.Write(PinValue);
+        //private void GPIO22_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO22pin.Write(PinValue);
 
-            }
+        //    }
 
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
 
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO22.Fill = redBrush;
-                    Gpio22Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO22.Fill = grayBrush;
-                    Gpio22Status.Text = "Boşta";
-                }
-            });
-        }
-
-
-        private void GPIO23_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO23pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO23.Fill = redBrush;
-                    Gpio23Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO23.Fill = grayBrush;
-                    Gpio23Status.Text = "Boşta";
-                }
-            });
-        }
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO22.Fill = redBrush;
+        //            Gpio22Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO22.Fill = grayBrush;
+        //            Gpio22Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
 
 
-        private void GPIO24_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO24pin.Write(PinValue);
+        //private void GPIO23_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO23pin.Write(PinValue);
 
-            }
+        //    }
 
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
 
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO24.Fill = redBrush;
-                    Gpio24Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO24.Fill = grayBrush;
-                    Gpio24Status.Text = "Boşta";
-                }
-            });
-        }
-
-
-
-        private void GPIO25_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO25pin.Write(PinValue);
-
-            }
-
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
-
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO25.Fill = redBrush;
-                    Gpio25Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO25.Fill = grayBrush;
-                    Gpio25Status.Text = "Boşta";
-                }
-            });
-        }
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO23.Fill = redBrush;
+        //            Gpio23Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO23.Fill = grayBrush;
+        //            Gpio23Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
 
 
-        private void GPIO26_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO26pin.Write(PinValue);
+        //private void GPIO24_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO24pin.Write(PinValue);
 
-            }
+        //    }
 
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
 
-                {
-               //     PinValue = GpioPinValue.Low;
-                    OGPIO26.Fill = redBrush;
-                    Gpio26Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO26.Fill = grayBrush;
-                    Gpio26Status.Text = "Boşta";
-                }
-            });
-        }
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO24.Fill = redBrush;
+        //            Gpio24Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO24.Fill = grayBrush;
+        //            Gpio24Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
 
 
-        private void GPIO27_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
-        {
-            // toggle the state of the LED every time the button is pressed
-            if (e.Edge == GpioPinEdge.FallingEdge)
-            {
-                PinValue = (PinValue == GpioPinValue.Low) ?
-                    GpioPinValue.High : GpioPinValue.Low;
-                GPIO27pin.Write(PinValue);
 
-            }
+        //private void GPIO25_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO25pin.Write(PinValue);
 
-            // need to invoke UI updates on the UI thread because this event
-            // handler gets invoked on a separate thread.
-            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
-                if (e.Edge == GpioPinEdge.FallingEdge)
+        //    }
 
-                {
-                    PinValue = GpioPinValue.Low;
-                    OGPIO27.Fill = redBrush;
-                    Gpio27Status.Text = "Çekiliyor";
-                }
-                else
-                {
-                    OGPIO27.Fill = grayBrush;
-                    Gpio27Status.Text = "Boşta";
-                }
-            });
-        }
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO25.Fill = redBrush;
+        //            Gpio25Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO25.Fill = grayBrush;
+        //            Gpio25Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
+
+
+        //private void GPIO26_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO26pin.Write(PinValue);
+
+        //    }
+
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        //        {
+        //       //     PinValue = GpioPinValue.Low;
+        //            OGPIO26.Fill = redBrush;
+        //            Gpio26Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO26.Fill = grayBrush;
+        //            Gpio26Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
+
+
+        //private void GPIO27_ValueChanged(GpioPin sender, GpioPinValueChangedEventArgs e)
+        //{
+        //    // toggle the state of the LED every time the button is pressed
+        //    if (e.Edge == GpioPinEdge.FallingEdge)
+        //    {
+        //        PinValue = (PinValue == GpioPinValue.Low) ?
+        //            GpioPinValue.High : GpioPinValue.Low;
+        //        GPIO27pin.Write(PinValue);
+
+        //    }
+
+        //    // need to invoke UI updates on the UI thread because this event
+        //    // handler gets invoked on a separate thread.
+        //    var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
+        //        if (e.Edge == GpioPinEdge.FallingEdge)
+
+        //        {
+        //            PinValue = GpioPinValue.Low;
+        //            OGPIO27.Fill = redBrush;
+        //            Gpio27Status.Text = "Çekiliyor";
+        //        }
+        //        else
+        //        {
+        //            OGPIO27.Fill = grayBrush;
+        //            Gpio27Status.Text = "Boşta";
+        //        }
+        //    });
+        //}
 
 
 
